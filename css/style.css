@@ -758,21 +758,34 @@ footer {
 }
 
 .modal-textarea::placeholder {
-font-size: 12px;
-line-height: 1.2;
-letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-input:focus, .modal-textarea:focus {
+.modal-input:focus,
+.modal-textarea:focus {
   border: 1px solid var(--main-brand-color);
 }
 
+.modal-checkbox-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-checkbox {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+}
+
 .modal-checkbox-text {
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
-color: var(--third-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
 }
 
 .modal-button {
