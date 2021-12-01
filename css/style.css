@@ -754,6 +754,7 @@ footer {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+  margin-bottom: 20px;
 }
 
 .modal-textarea::placeholder {
@@ -765,6 +766,13 @@ color: rgba(117, 117, 117, 0.5);
 
 .modal-input:focus, .modal-textarea:focus {
   border: 1px solid var(--main-brand-color);
+}
+
+.modal-checkbox-text {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--third-text-color);
 }
 
 .modal-button {
@@ -780,4 +788,5 @@ color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.06em;
   color: var(--secondary-page-color);
   cursor: pointer;
+  margin-top: 30px;
 }

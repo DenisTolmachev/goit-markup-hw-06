@@ -462,7 +462,7 @@
     </footer>
     <!--Модальное окно-->
     <!-- is-hidden -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-field" data-modal-close type="button">
           <svg class="close-icon">
@@ -485,17 +485,31 @@
           </div>
           <div class="modal-form-field">
             <label for="user-comment" class="modal-input-text">Комментарий</label>
-            <textarea name="user-comment" class="modal-textarea" id="user-comment" rows="5" placeholder="Введите текст"></textarea>
+            <textarea
+              name="user-comment"
+              class="modal-textarea"
+              id="user-comment"
+              rows="5"
+              placeholder="Введите текст"
+            ></textarea>
           </div>
-
-			 <input type="checkbox" name="modal-checkbox" class="modal-checkbox" id="modal-checkbox">
-			 <label for="modal-checkbox" class="modal-checkbox-text">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          <div class="modal-form-field">
+            <input
+              type="checkbox"
+              name="modal-checkbox"
+              class="modal-checkbox"
+              id="modal-checkbox"
+            />
+            <label for="modal-checkbox" class="modal-checkbox-text"
+              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+            >
+          </div>
 
           <button class="modal-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
     <!--Скрипты-->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
