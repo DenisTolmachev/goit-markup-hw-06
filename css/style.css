@@ -609,7 +609,7 @@ footer {
 }
 
 .projects-explain-text {
-	font-size: 18px;
+  font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--secondary-page-color);
@@ -666,7 +666,7 @@ footer {
 }
 
 .backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0.7);
+  transform: translate(-50%, -50%) scale(0.7);
 }
 
 .modal {
@@ -683,6 +683,7 @@ footer {
   transition-property: transform;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
 }
 
 .close-field {
@@ -708,4 +709,49 @@ footer {
 
 .close-field:hover {
   fill: currentColor;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.modal-input:focus {
+border: 1px solid var(--main-brand-color);
+}
+
+.modal-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 56px;
+  background-color: var(--main-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--secondary-page-color);
+  cursor: pointer;
 }

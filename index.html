@@ -461,16 +461,26 @@
       </div>
     </footer>
     <!--Модальное окно-->
-    <div class="backdrop is-hidden" data-modal>
+	 <!-- is-hidden -->
+    <div class="backdrop " data-modal>
       <div class="modal">
         <button class="close-field" data-modal-close type="button">
           <svg class="close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+		  <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+		  <form action="#" class="modal-form">
+			  <input type="text" name="user-name" class="modal-input" required>
+			  <input type="tel" name="user-tel" class="modal-input" required>
+			  <input type="email" name="user-email" class="modal-input" required>
+			  <input type="text" name="user-comment" class="modal-input" required>
+
+			  <button class="modal-button" type="submit">Отправить</button>
+		  </form>
       </div>
     </div>
     <!--Скрипты-->
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
