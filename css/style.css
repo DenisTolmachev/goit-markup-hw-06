@@ -727,6 +727,11 @@ footer {
   flex-direction: column;
 }
 
+.modal-form-field {
+	position: relative;
+	margin-bottom: 10px;
+}
+
 .modal-input-text {
   display: block;
   font-size: 12px;
@@ -738,12 +743,28 @@ footer {
 
 .modal-input {
   width: 448px;
-  padding: 11px 12px;
+  padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 10px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-icon {
+	display: inline-block;
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left:12px;
+	bottom: 12px;
+}
+
+.input-icon {
+	width: 18px;
+	height: 18px;
 }
 
 .modal-textarea {
@@ -755,6 +776,9 @@ footer {
   border-radius: 4px;
   resize: none;
   margin-bottom: 20px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea::placeholder {
@@ -769,23 +793,58 @@ footer {
   border: 1px solid var(--main-brand-color);
 }
 
+.modal-input:hover,
+.modal-textarea:hover {
+cursor: pointer;
+}
+
 .modal-checkbox-field {
+	position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modal-checkbox {
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.check-box {
+	height: 15px;
+	width: 16px;
+	margin-right: 8px;
+	background-image: url(../images/checkbox-off.svg);
+	cursor: pointer;
+	/* transition-property: background-image;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+/* .modal-checkbox:focus + .check-box {
+	background-image: url(../images/checkbox-fokus.svg);
+} */
+
+.modal-checkbox:checked:focus + .check-box {
+	background-image: url(../images/checkbox-on.svg);
 }
 
 .modal-checkbox-text {
+	display: flex;
+	align-items: center;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
+}
+
+.agreement {
+	margin-left: 5px;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  color: var(--main-brand-color);
 }
 
 .modal-button {

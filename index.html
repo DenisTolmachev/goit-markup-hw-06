@@ -472,14 +472,29 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" class="modal-form">
           <div class="modal-form-field">
+            <span class="modal-input-icon">
+					<svg class="input-icon">
+                  <use href="./images/icons.svg#name-icon"></use>
+                </svg>
+				</span>
             <label for="user-name" class="modal-input-text">Имя</label>
             <input type="text" name="user-name" id="user-name" class="modal-input" required />
           </div>
           <div class="modal-form-field">
+				 <span class="modal-input-icon">
+					<svg class="input-icon">
+                  <use href="./images/icons.svg#phone-icon"></use>
+                </svg>
+				</span>
             <label for="user-tel" class="modal-input-text">Телефон</label>
             <input type="tel" name="user-tel" id="user-tel" class="modal-input" required />
           </div>
           <div class="modal-form-field">
+				 <span class="modal-input-icon">
+					<svg class="input-icon">
+                  <use href="./images/icons.svg#email-icon"></use>
+                </svg>
+				</span>
             <label for="user-email" class="modal-input-text">Почта</label>
             <input type="email" name="user-email" id="user-email" class="modal-input" required />
           </div>
@@ -494,14 +509,16 @@
             ></textarea>
           </div>
           <div class="modal-checkbox-field">
-            <input
-              type="checkbox"
-              name="modal-checkbox"
-              class="modal-checkbox"
-              id="modal-checkbox"
-            />
-            <label for="modal-checkbox" class="modal-checkbox-text"
-              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+            <label for="modal-checkbox" class="modal-checkbox-text">
+              <input
+                type="checkbox"
+                name="modal-checkbox"
+                class="modal-checkbox"
+                id="modal-checkbox"
+              />
+              <span class="check-box"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="agreement" href=""> Условия договора</a></label
             >
           </div>
 
