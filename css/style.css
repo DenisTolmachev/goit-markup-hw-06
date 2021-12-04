@@ -671,8 +671,7 @@ footer {
 
 .modal {
   position: absolute;
-  min-height: 581px;
-  min-width: 528px;
+  max-width: 528px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -739,7 +738,8 @@ footer {
 }
 
 .modal-input {
-  width: 448px;
+  position: relative;
+  width: 100%;
   padding: 12px 42px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -751,12 +751,29 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-input:focus-within + .input-icon {
+  fill: var(--main-brand-color);
+}
+
+.input-icon {
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  bottom: 12px;
+  fill: var(--main-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-input-text {
   margin-bottom: 20px;
 }
 
 .modal-textarea {
-  width: 448px;
+  width: 100%;
   padding: 16px 12px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -784,15 +801,6 @@ footer {
 .modal-input:hover,
 .modal-textarea:hover {
   cursor: pointer;
-}
-
-.input-icon {
-  display: inline-block;
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 12px;
-  bottom: 12px;
 }
 
 .modal-checkbox {
