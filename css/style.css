@@ -755,10 +755,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.modal-input:focus ~ .input-icon {
-fill: var(--main-brand-color);
-}
-
 .modal-textarea {
   width: 448px;
   padding: 16px 12px;
