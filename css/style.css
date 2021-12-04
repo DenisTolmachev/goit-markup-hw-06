@@ -499,7 +499,8 @@ footer {
   line-height: 1.7;
 }
 
-.social-footer-title {
+.social-footer-title,
+.subscription-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -519,6 +520,53 @@ footer {
 
 .social-icon-footer {
   fill: var(--secondary-page-color);
+}
+
+.subscription {
+  margin-left: auto;
+}
+
+.footer-email-input {
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  outline: none;
+  color: var(--secondary-page-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-email-input:focus {
+	border: 1px solid var(--main-brand-color);
+}
+
+.footer-email-btn {
+	position: relative;
+  padding: 10px 62px 10px 29px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--secondary-page-color);
+  background-color: var(--main-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-email-btn::after {
+content: "";
+position: absolute;
+width: 24px;
+height: 24px;
+top: 13px;
+right: 28px;
+background-image: url(../images/send-icon.svg);
 }
 
 /*Страница портфолио*/
