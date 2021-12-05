@@ -11,7 +11,7 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --footer-social-color: rgba(255, 255, 255, 0.1);
   --portfolio-border-color: #eeeeee;
-  --primary-button-hover:#2196f3CC
+  --primary-button-hover: #2196f3cc;
 }
 
 body {
@@ -527,7 +527,7 @@ footer {
 }
 
 .subscription-form {
-	display: flex;
+  display: flex;
 }
 
 .footer-email-input {
@@ -552,18 +552,18 @@ footer {
 }
 
 .footer-submit-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	padding: 10px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px 28px;
 }
 
 .send-icon {
-	width: 24px;
-	height: 24px;
-	margin-left: 10px;
-	fill: var(--secondary-page-color);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--secondary-page-color);
 }
 
 .footer-email-btn::after {
@@ -868,6 +868,7 @@ footer {
 }
 
 .checkbox-field {
+  margin-bottom: 30px;
 }
 
 .modal-checkbox-text {
@@ -920,8 +921,5 @@ footer {
 }
 
 .modal-button {
-  
   padding: 10px 56px;
-  
-  margin-top: 30px;
 }
